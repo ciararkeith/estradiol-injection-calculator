@@ -26,16 +26,14 @@
     app_state.value = calc(app_state.mode);
     app_state.mode = app_state.mode === "mg" ? "ml" : "mg";
   }
-
-  // mode === "mg" ? 7.2 : 0.18,
 </script>
 
 <main>
   <h1>Injection Calculator</h1>
 
   <p class="note">
-    Note: 40mg/mL is the AstroVials default, please consult your vial for
-    dosage.<br />
+    Note: 40mg/mL is the <a href="https://www.astrovials.com">AstroVials</a>
+    default, please consult your vial for dosage.<br />
     Most syringes go up to 1mL, but your results may vary based on the syringe you
     are using.
   </p>
