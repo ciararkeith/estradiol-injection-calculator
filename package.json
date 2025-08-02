@@ -10,7 +10,7 @@
     "prepare": "svelte-kit sync || echo ''",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "deploy": "pnpm build && pnpx gh-pages -d build -t true"
+    "deploy": "bun run build && gh-pages -d docs"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.8",
