@@ -101,7 +101,7 @@
     Reference the simulator for how many days after you may need to inject based
     on your dosage:<br />
     <a
-      href="https://transfemscience.org/estrogen-simulator/"
+      href="https://transfemscience.org/misc/injectable-e2-simulator/"
       target="_blank"
       rel="noopener noreferrer">Estrogen Simulator</a
     >
