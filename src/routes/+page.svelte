@@ -18,6 +18,9 @@
   }
 
   let result: number = $derived(calc(app_state.mode));
+  let mg: number = $derived(
+    app_state.mode !== "ml" ? calc("ml") / app_state.dosage : result,
+  );
 
   function click(_event: MouseEvent) {
     app_state.value = calc(app_state.mode);
@@ -101,9 +104,9 @@
     Reference the simulator for how many days after you may need to inject based
     on your dosage:<br />
     <a
-      href="https://transfemscience.org/misc/injectable-e2-simulator/"
+      href="https://sim.transfemscience.org/?e=ec_o&d={mg}&xm=20"
       target="_blank"
-      rel="noopener noreferrer">Estrogen Simulator</a
+      rel="noopener noreferrer">Estrogen Simulator ({mg} mg)</a
     >
   </footer>
 </main>
