@@ -16,7 +16,7 @@ const config = {
     adapter: adapter({
       pages: 'docs',
       assets: 'docs',
-      base: dev ? '' : 'estradiol-injection-calculator'
+      base: dev ? '' : 'https://ciararkeith.github.io/estradiol-injection-calculator'
     }),
   }
 };
