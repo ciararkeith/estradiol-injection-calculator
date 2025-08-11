@@ -8,6 +8,7 @@ const config = {
   // Consult https://svelte.dev/docs/kit/integrations
   // for more information about preprocessors
   preprocess: vitePreprocess(),
+  base: 'https://ciararkeith.github.io/estradiol-injection-calculator',
 
   kit: {
     // adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
@@ -15,9 +16,8 @@ const config = {
     // See https://svelte.dev/docs/kit/adapters for more information about adapters.
     adapter: adapter({
       pages: 'docs',
-      assets: 'docs',
-      base: dev ? '' : 'https://ciararkeith.github.io/estradiol-injection-calculator'
-    }),
+      assets: 'docs'
+    })
   }
 };
 
